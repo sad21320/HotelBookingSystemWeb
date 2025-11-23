@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="text-center">
+    <h1 class="display-4 mb-3">Система бронирования отеля</h1>
+    <p class="lead text-muted">Лабораторная работа: Вариант 30</p>
+
+    <h3 class="mt-5 mb-4">Меню управления:</h3>
+
+    <div class="d-grid gap-3 col-6 mx-auto">
+        <a asp-controller="Rooms" asp-action="Index" class="btn btn-outline-primary btn-lg">
+            🏨 Номерной фонд
+        </a>
+
+        <a asp-controller="Bookings" asp-action="Index" class="btn btn-outline-success btn-lg">
+            📅 Бронирования
+        </a>
+
+        <a asp-controller="Guests" asp-action="Index" class="btn btn-outline-info btn-lg">
+            👥 Гости
+        </a>
+
+        <a asp-controller="Employees" asp-action="Index" class="btn btn-outline-secondary btn-lg">
+            👔 Отдел кадров (Сотрудники)
+        </a>
+    </div>
+</div>
